@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>DIV拖拽</title>
+<style type="text/css">
+	#div1{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+	}
+</style>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+    	var div1=document.getElementById("div1");
+    	div1.onmousedown=function(event){
+				var x=event.clientX-div1.offsetLeft;
+    			var y=event.clientY-div1.offsetTop;
+    		document.onmousemove=function(event){
+    			var left=event.clientX-x;
+    			var top=event.clientY-y;
+    			div1.style.position="absolute";
+    			div1.style.left=left+"px";
+    			div1.style.top=top+"px";
+    		}
+    	}
+    	div1.onmouseup=function(){
+    		document.onmousemove=null;
+    	}
+    	
+    </script>
+</body>
+</html>
