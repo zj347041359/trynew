@@ -3,81 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi">
 <title>葡萄藤</title>
 <style type="text/css" media="screen">
-	
+	@media screen and (max-width:640px){
+		html{
+			font-size:15px;
+		}
+	}
+	@media screen and (max-width:960px) and (min-width: 640px){
+		html{
+			font-size:20px;
+		}
+	}
+	@media screen and (max-width: 1280px) and (min-width: 960px){
+		html{
+			font-size:25px;
+		}
+	}
+	@media screen and (min-width: 1280px){
+		html{
+			font-size:30px;
+		}
+	}
 	html{
 		background-color: #68CDD5;
+		margin:0 auto;
 	}
-	.return{
-		width: 54px;
-		height: 54px;
-	}
-	.pptlogo{
-		width: 181px;
-		height: 70px;
-	}
-	.logodiv{
-		text-align:center;
-		margin-top: 42px;
-	}
-	p{
-		font-family: HiraginoSansGB W3;
-		font-size:4.7vw;
-		color:#FFF;
-		text-align:center;
-		line-height:1.8;
-	}
-	.content{
-		padding-top: 110px;
-		margin: auto;
-		width: 70.2%;
-		padding-bottom: 179px;
-	}
-	.user{
-		float: left;
-		padding-left: 19.1vw;
-		width: 15.9vw;
-		text-align: center;
-		font-size: 3.8vw;
-		font-family: Adobe 黑体 Std;
-	}
-	.user img{
-		width: 84px;
-		height: 84px;
-	}
-	.user a{
-		color:#FFF;
-		text-decoration:none;
-	}
-	.icon{
-		float: right;
-		padding-right: 19.1vw;
-		width: 15.9vw;
-		font-size: 3.8vw;
-		text-align: center;
-		font-family: Adobe 黑体 Std;
-		color:#FFF;
-	}
-	.icon img{
-		width: 84px;
-		height: 84px;
-	}
-	.icon a{
-		color:#FFF;
-		text-decoration:none;
-	}
+		.return{
+			width: 2.7rem;
+			height: 2.7rem;
+		}
+		img{
+			max-height: 100%;
+			max-height: 100%;
+		}
+		.logodiv{
+			margin-top: 2.1rem;
+			width: 9.1rem;
+			height: 3.5rem;
+			position: absolute;
+			left: 50%;
+			transform:translateX(-50%);
+		}
+		p{
+			font-family: HiraginoSansGB W3;
+			font-size:1.5rem;
+			color:#FFF;
+			text-align:center;
+			line-height:1.8;
+		}
+		.content{
+			padding-top: 11.1rem;
+			margin: auto;
+			width: 70.2%;
+			padding-bottom: 8.9rem;
+		}
+		.user{
+			float: left;
+			padding-left: 19%;
+			width: 5.1rem;
+			text-align: center;
+			font-size: 1.2rem;
+			font-family: Adobe 黑体 Std;
+			width: 4.2rem;
+			height: 4.2rem;
+		}
+		a{
+			color:#FFF;
+			text-decoration:none;
+		}
+		.icon{
+			float: right;
+			padding-right: 19%;
+			width: 5.1rem;
+			font-size:1.2rem;
+			text-align: center;
+			font-family: Adobe 黑体 Std;
+			color:#FFF;
+			width: 4.2rem;
+			height: 4.2rem;
+		}
 
 </style>
 </head>
 <body>
-    <div>
-    	<a href=""><img class="return" src="img/return.jpg" alt="返回"></a>
+    <div class="return">
+    	<a href=""><img src="img/return.jpg" alt="返回"></a>
     </div>
-    <div class="logodiv">
-    	<img class="pptlogo" src="img/pptlogo.jpg" alt="葡萄藤">
-    </div>
+        <div class="logodiv">
+    	<img src="img/pptlogo.jpg" alt="葡萄藤">
+	</div>
     <div class="content">
     	<p >葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，抓鬼，炸狼堡等多种聚会游戏，以线下聚会桌游道具为主。</p>
     </div>
