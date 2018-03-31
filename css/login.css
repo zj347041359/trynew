@@ -12,12 +12,15 @@ body{
 	@media screen and (max-width:740px){
 	body{
 		background-color: #eff0f4;
+		transform:none;
 	}
 	.top{
 		width: 100%;
 		height: 44px;
 		background-color: #5fc0cd;
-		position: relative;
+		position: fixed;
+		top:0px;
+		left: 0px;
 		margin-bottom: 8px;
 	}
 	.top a{
@@ -42,6 +45,9 @@ body{
   		left: 50%;
   		transform: translate(-50%,-50%);
 	}
+	form{
+			margin-top:52px;
+		}
 	.user{
 			width: 100%;
 			height: 50px;
@@ -105,8 +111,6 @@ body{
 			width: 100%;
 			height: 88px;
 			background-color: #5fc0cd;
-			position: relative;
-			margin-bottom: 16px;
 		}
 		.top a{
 			text-decoration:none;
@@ -129,6 +133,9 @@ body{
 			font-size: 36px;
 	  		left: 50%;
 	  		transform: translate(-50%,-50%);
+		}
+		form{
+			margin-top:104px;
 		}
 		.user{
 			width: 100%;
@@ -192,4 +199,9 @@ body{
 		}
 		:-ms-input-placeholder { /* Internet Explorer 10-11 */
   		color:    #e9eced;
+		}
+		.top{
+			position: fixed;
+			top:0px;
+			left: 0px;
 		}
