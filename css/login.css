@@ -156,7 +156,7 @@ body{
 			position: absolute;
 			left:120px;
 			display: inline-block;
-			width: calc(100% - 118px;);
+			width: calc(100% - 120px);
 			height: 100px;
 			border: 0;
 			padding: 0;
