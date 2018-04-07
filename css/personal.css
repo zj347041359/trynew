@@ -1,0 +1,513 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-03-30 09:45:11
+ * @version $Id$
+ */
+body{
+		margin: 0;
+		padding: 0;
+	}
+	p{
+		margin:0;
+		padding: 0;
+	}
+	@media screen and (max-width:740px){
+	body{
+		transform:none;
+	}
+	.top{
+			width: 100%;
+			height: 44px;
+			background-color: #5fc0cd;
+		}
+		.return{
+			border-right: 2px solid #fff;
+            border-top: 2px solid #fff;
+            height: 5px;
+            width: 5px;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            /*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+            position: absolute;
+            left: 17.5px;
+            top:15px;
+		}
+		.title{
+			text-decoration:none;
+			color:#FFF;
+			font-family: 黑体 繁;
+			position: absolute;
+			top:50%;
+			font-size: 18px;
+	  		left: 50%;
+	  		transform: translate(-50%,-50%);
+		}
+		.personal{
+			margin-top:44px;
+			background-image: url("../img/background.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+  			-webkit-background-size: cover;
+  			-o-background-size: cover;
+  			background-position: center 0;
+  			height: 163px;
+  			width: 100%;
+		}
+		.portrait{
+			float: left;
+			position: relative;
+			left: 15px;
+			top:40px;
+			width: 84px;
+			height: 84px;
+			display: inline-block;
+		}
+		.portrait img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.information{
+			float: left;
+			position: absolute;
+			left: 119.5px;
+			top: 109px;
+			font-family: 黑体 繁;
+			color:#FFF;
+			max-width: 100%;
+		}
+		.information p{
+			display: inline-block;
+		}
+		.name{
+			font-size: 18px;
+		}
+		.year{
+			padding-left: 15px;
+			font-size: 14px;
+		}
+		.location{
+			font-size: 12px;
+			padding-left: 4px;
+
+		}
+		.skill{
+			width: 100%;
+			height: 50px;
+			border-bottom: 1px solid #e1e5e7;
+		}
+		.skill div{
+			height: 13px;
+			border-left: 3px solid #5fc0cd;
+			position: relative;
+			top: 16px;
+			left: 15px;
+			width: 1px;
+		}
+		.skill p{
+			display: inline-block;
+			font-size: 16px;
+			font-family: 黑体 繁;
+			position: relative;
+			left: 29px;
+		}
+		.condition{
+			width: calc(100% - 16.5px);
+			height: 50px;
+			position: absolute;
+			left: 16.5px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:50px;
+		}
+		.condition img{
+			margin-left: 8px;
+			display: inline-block;
+		}
+		.bor{
+			display: inline-block;
+			height: 13px;
+			border-left: 1px solid #e1e5e7;
+			line-height: 50px;
+		}
+		.condition p{
+			padding-right: 8px;
+			display: inline-block;
+			font-size: 16px;
+		}
+		.experience{
+			width: calc(100% - 16.5px);
+			height: 50px;
+			position: relative;
+			top:50px;
+			/*left: 17.5px;*/
+			margin-left: 16.5px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:50px;
+		}
+		.current{
+			display: inline-block;
+			font-size: 16px;
+			color: #999999;
+			font-family: 黑体 繁;
+			margin-left: 13px;
+			margin-right: 13px;
+			line-height: 50px;
+		}
+		.container{
+			display: inline-block;
+			font-size: 16px;
+			color: #333;
+			font-family: 黑体 繁;
+			margin-left: 13px;
+		}
+		.time{
+			width: calc(100% - 18.5px);
+			height: 50px;
+			position: relative;
+			top:50px;
+			/*left: 18.5px;*/
+			margin-left: 18.5px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:50px;
+		}
+		.price{
+			width: calc(100% - 18px);
+			height: 50px;
+			position: relative;
+			top:50px;
+			/*left: 18px;*/
+			margin-left: 18px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:50px;
+		}
+		.container1{
+			display: inline-block;
+			font-size: 16px;
+			color: red;
+			font-family: 黑体 繁;
+			margin-left: 13px;
+		}
+		.introduce{
+			width: calc(100% - 18px);
+			position: relative;
+			top:50px;
+			/*left: 18px;*/
+			margin-left: 18px;
+			border-bottom: 1px solid #e1e5e7;
+			min-height: 50px;
+			margin-bottom: 79px;
+		}
+		.current1{
+			display: inline-block;
+			font-size: 16px;
+			color: #999999;
+			font-family: 黑体 繁;
+			margin-left: 13px;
+			margin-right: 13px;
+			position: absolute;
+			top:50%;
+			transform: translate(0, -50%);
+		}
+		.bor1{
+			display: inline-block;
+			height: 13px;
+			border-left: 1px solid #e1e5e7;
+			position: absolute;
+			left: 98px;
+			top:50%;
+			transform: translate(0, -50%);
+		}
+		.container2{
+			display: inline-block;
+			font-size: 15px;
+			color: #333;
+			max-width: calc(100% - 112px);
+			padding-top: 10px;
+			margin-left: 112px;
+			margin-bottom: 10px;
+			/*position: absolute;
+			left: 112px;
+			top: 50%;
+    		transform: translate(0, -50%);*/
+		}
+		.bottom{
+			position: fixed;
+			bottom:0px;
+			left: 0px;
+			height: 44px;
+			width: 100%;
+			padding-top: 17.5px;
+			padding-bottom: 17.5px;
+			background-color: #fff;
+		}
+		.bottom a{
+			text-decoration:none;
+			height: 44px;
+			border: 2px solid #5fc0cd;
+			line-height: 44px;
+			font-size: 17px;
+			text-align:center
+		}
+		.bottom1{
+			position: absolute;
+			left: 5%;
+			width: 41.9%;
+			background-color: #fff;
+			color: #5fc0cd;
+		}
+		.bottom2{
+			position: absolute;
+			right: 5%;
+			width: 41.9%;
+			background-color: #5fc0cd;
+			color: #fff;;
+		}
+
+	}
+	@media screen and (min-width:740px){
+		.top{
+			width: 100%;
+			height: 88px;
+			background-color: #5fc0cd;
+		}
+		.return{
+			border-right: 2px solid #fff;
+            border-top: 2px solid #fff;
+            height: 10px;
+            width: 10px;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            /*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+            position: absolute;
+            left: 35px;
+            top:30px;
+		}
+		.title{
+			text-decoration:none;
+			color:#FFF;
+			font-family: 黑体 繁;
+			position: absolute;
+			top:50%;
+			font-size: 36px;
+	  		left: 50%;
+	  		transform: translate(-50%,-50%);
+		}
+		.personal{
+			margin-top:88px;
+			background-image: url("../img/background.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+  			-webkit-background-size: cover;
+  			-o-background-size: cover;
+  			background-position: center 0;
+  			height: 326px;
+  			width: 100%;
+		}
+		.portrait{
+			float: left;
+			position: relative;
+			left: 30px;
+			top:81px;
+			width: 168px;
+			height: 168px;
+			display: inline-block;
+		}
+		.information{
+			float: left;
+			position: absolute;
+			left: 239px;
+			top: 218px;
+			font-family: 黑体 繁;
+			color:#FFF;
+			max-width: 100%;
+		}
+		.information p{
+			display: inline-block;
+		}
+		.name{
+			font-size: 36px;
+		}
+		.year{
+			padding-left: 30px;
+			font-size: 28px;
+		}
+		.location{
+			font-size: 24px;
+			padding-left: 8px;
+
+		}
+		.skill{
+			width: 100%;
+			height: 100px;
+			border-bottom: 1px solid #e1e5e7;
+		}
+		.skill div{
+			height: 26px;
+			border-left: 3px solid #5fc0cd;
+			position: relative;
+			top: 32px;
+			left: 30px;
+			width: 1px;
+		}
+		.skill p{
+			display: inline-block;
+			font-size: 32px;
+			font-family: 黑体 繁;
+			position: relative;
+			left: 58px;
+		}
+		.condition{
+			width: calc(100% - 33px);
+			height: 100px;
+			position: absolute;
+			left: 33px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:100px;
+		}
+		.condition img{
+			margin-left: 16px;
+			display: inline-block;
+		}
+		.bor{
+			display: inline-block;
+			height: 26px;
+			border-left: 1px solid #e1e5e7;
+			line-height: 100px;
+		}
+		.condition p{
+			padding-right: 16px;
+			display: inline-block;
+			font-size: 32px;
+		}
+		.experience{
+			width: calc(100% - 35px);
+			height: 100px;
+			position: relative;
+			top:100px;
+			/*left: 35px;*/
+			margin-left: 35px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:100px;
+		}
+		.current{
+			display: inline-block;
+			font-size: 32px;
+			color: #999999;
+			font-family: 黑体 繁;
+			margin-left: 26px;
+			margin-right: 26px;
+			line-height: 100px;
+		}
+		.container{
+			display: inline-block;
+			font-size: 32px;
+			color: #333;
+			font-family: 黑体 繁;
+			margin-left: 26px;
+		}
+		.time{
+			width: calc(100% - 37px);
+			height: 100px;
+			position: relative;
+			top:100px;
+			/*left: 37px;*/
+			margin-left: 37px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:100px;
+		}
+		.price{
+			width: calc(100% - 36px);
+			height: 100px;
+			position: relative;
+			top:100px;
+			/*left: 36px;*/
+			margin-left: 36px;
+			border-bottom: 1px solid #e1e5e7;
+			line-height:100px;
+		}
+		.container1{
+			display: inline-block;
+			font-size: 32px;
+			color: red;
+			font-family: 黑体 繁;
+			margin-left: 26px;
+		}
+		.introduce{
+			width: calc(100% - 36px);
+			position: relative;
+			top:100px;
+			/*left: 36px;*/
+			margin-left: 36px;
+			border-bottom: 1px solid #e1e5e7;
+			min-height: 100px;
+			margin-bottom: 158px;
+		}
+		.current1{
+			display: inline-block;
+			font-size: 32px;
+			color: #999999;
+			font-family: 黑体 繁;
+			margin-left: 26px;
+			margin-right: 26px;
+			position: absolute;
+			top:50%;
+			transform: translate(0, -50%);
+		}
+		.bor1{
+			display: inline-block;
+			height: 26px;
+			border-left: 1px solid #e1e5e7;
+			position: absolute;
+			left: 196px;
+			top:50%;
+			transform: translate(0, -50%);
+		}
+		.container2{
+			display: inline-block;
+			font-size: 30px;
+			color: #333;
+			position: absolute;
+			left: 224px;
+			top: 50%;
+    		transform: translate(0, -50%);
+    	}
+		.bottom{
+			position: fixed;
+			bottom:0px;
+			left: 0px;
+			height: 88px;
+			width: 100%;
+			padding-top: 35px;
+			padding-bottom: 35px;
+			background-color: #fff;
+		}
+		.bottom a{
+			text-decoration:none;
+			height: 88px;
+			border: 2px solid #5fc0cd;
+			line-height: 88px;
+			font-size: 34px;
+			text-align:center
+		}
+		.bottom1{
+			position: absolute;
+			left: 5%;
+			width: 41.9%;
+			background-color: #fff;
+			color: #5fc0cd;
+		}
+		.bottom2{
+			position: absolute;
+			right: 5%;
+			width: 41.9%;
+			background-color: #5fc0cd;
+			color: #fff;;
+		}
+		
+		}
+		.top{
+			position: fixed;
+			top:0px;
+			left: 0px;
+		}
