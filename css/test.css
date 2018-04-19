@@ -16,7 +16,7 @@
 	margin:0;
 	padding: 0;
  }
- 	@media screen and (min-width: 320px) {html{font-size:50px;}}
+ 	@media screen and (min-width: 0px) {html{font-size:50px;}}
 	@media screen and (min-width: 360px) {html{font-size:56.25px;}}
 	@media screen and (min-width: 375px) {html{font-size:58.59375px;}}
 	@media screen and (min-width: 400px) {html{font-size:62.5px;}}
@@ -197,13 +197,15 @@
 			background-size: 0.38rem 0.21rem;
 		}
 		.icon1{
+			display: flex;
+			align-items: center;
 			position: absolute;
 			top: 0.27rem;
 			left: 0.27rem;
 		}
 		.icon1 span{
-			width: 24px;
-			height: 24px;
+			width: 0.213rem;
+			height: 0.213rem;
 			background-position: -0.17rem 0px;
 		}
 		.icon1 p{
@@ -212,7 +214,7 @@
 			color: #999;
 			font-family: 黑体-繁;
 			margin-left: 0.04rem;
-			margin-bottom: 0.04rem;
+			margin-top: 0.04rem;
 		}
 		.content a{
 			border-left: 0.04rem solid #5fc0cd;
@@ -233,6 +235,9 @@
 			position: absolute;
             left: 0.60rem;
             top:0.65rem;
+            text-overflow: ellipsis;
+  			white-space: nowrap;
+  			overflow: hidden;
 		}
 		.price{
 			font-size: 0.27rem;
@@ -246,7 +251,8 @@
 			position: absolute;
 			bottom: 0.23rem;
 			left: 0.27rem;
-			text-align: center;
+			display: flex;
+			align-items: center;
 		}
 		.icon2 span{
 			width: 0.17rem;
@@ -258,10 +264,9 @@
 			font-size: 0.23rem;
 			color: #999;
 			font-family: 黑体-繁;
-			margin-left: 5px;
-			margin-bottom: 5px;
+			margin-left: 0.044rem;
 		}
 		.none2{
-			height: 100px;
+			height: 0.89rem;
 			width: 100%;
 		}
