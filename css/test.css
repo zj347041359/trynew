@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-04-18 21:39:02
+ * @version $Id$
+ */
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-04-09 16:29:49
+ * @version $Id$
+ */
+ p,div,body,p{
+	margin:0;
+	padding: 0;
+ }
+ 	@media screen and (min-width: 320px) {html{font-size:50px;}}
+	@media screen and (min-width: 360px) {html{font-size:56.25px;}}
+	@media screen and (min-width: 375px) {html{font-size:58.59375px;}}
+	@media screen and (min-width: 400px) {html{font-size:62.5px;}}
+	@media screen and (min-width: 414px) {html{font-size:64.6875px;}}
+	@media screen and (min-width: 440px) {html{font-size:68.75px;}}
+	@media screen and (min-width: 480px) {html{font-size:75px;}}
+	@media screen and (min-width: 520px) {html{font-size:81.25px;}}
+	@media screen and (min-width: 560px) {html{font-size:87.5px;}}
+	@media screen and (min-width: 600px) {html{font-size:93.75px;}}
+	@media screen and (min-width: 640px) {html{font-size:100px;}}
+	@media screen and (min-width: 680px) {html{font-size:106.25px;}}
+	@media screen and (min-width: 720px) {html{font-size:112.5px;}}
+	@media screen and (min-width: 760px) {html{font-size:118.75px;}}
+	@media screen and (min-width: 800px) {html{font-size:125px;}}
+	@media screen and (min-width: 960px) {html{font-size:150px;}}
+ 	.top{
+			position: fixed;
+			top:0px;
+			left: 0px;
+			width: 100%;
+			background-color: #fff;
+		}
+ 	.header{
+			position: relative;
+			height: 0.78rem;
+			background-color: #5fc0cd;
+		}
+	.choose{
+			width: 2.53rem;
+			height: 0.60rem;
+			background-color: #55a8b3;
+			font-family: 黑体 繁;
+			position: absolute;
+			top:50%;
+			font-size: 0.3rem;
+	  		left: 50%;
+	  		transform: translate(-50%,-50%);
+	  		line-height: 0.60rem;
+	  		display: flex;
+	  		border-radius: 0.09rem;
+		}
+		.choose a{
+			display: inline-block;
+			flex-grow: 1;
+			text-align: center;
+			border-radius: 0.09rem;
+			text-decoration:none;
+
+		}
+		.boss{
+			color: #fff;
+		}
+		.staff{
+			background-color: #fff;
+			color: #5fc0cd;
+		}
+		.map{
+			width: 0.37rem;
+			height: 0.39rem;
+			position: absolute;
+			top: 0.20rem;
+			right: 0.27rem;
+			background-image: url("../img/map.jpg");
+			background-size: 0.37rem 0.39rem;
+		}
+		.screening{
+			width: 100%;
+			height:0.72rem;
+			border-bottom: 1px solid #e1e5e7;
+			display: flex;
+			position: relative;
+		}
+		.screening div{
+			flex: 1;
+			font-size: 0.25rem;
+			color: #999999;
+			text-align:center;
+			line-height: 0.72rem;
+			display: inline-block;
+			align-items: center;
+
+		}
+		.triangle{
+			margin-left: 0.18rem;
+			width: 0;
+			height: 0;
+			border-top: 13px solid #afbac0;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			right: 0.11rem;
+		}
+		.side1{
+			height: 0.63rem;
+			border-right: 1px solid #e3e7e8;
+			position: absolute;
+			top: 0.04rem;
+			left: 33.3%;
+		}
+		.side2{
+			height: 0.63rem;
+			border-right: 1px solid #e3e7e8;
+			position: absolute;
+			top: 5px;
+			left: 66.6%;
+		}
+		ul { list-style:none;
+			margin:0;
+			padding:0;
+			text-align:center;
+			background:#fff;
+			color:#999999;
+			-webkit-transform:scaleY(0);
+			-webkit-transform-origin:0 0;
+		}
+		li {
+			padding:0; margin:0;
+		}
+		div div div:hover ul {
+			-webkit-animation:ulShow 0.4s;
+			-webkit-animation-fill-mode:forwards;
+			-webkit-animation-timing-function: cubic-bezier(0,0.8,0.9,1);
+		}
+		@-webkit-keyframes ulShow {
+			from { -webkit-transform:scaleY(0); }
+			to { -webkit-transform:scaleY(1); }
+		}
+		.footer{
+			height: 0.89rem;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			border-top: 1px solid #e2eaec;
+			background-color: #fff;
+		}
+		.footer a{
+			background-image: url("../img/footer.png");
+			background-size: 1.62rem 0.84rem;
+		}
+		.footer1{
+			width: 0.41rem;
+			height: 0.65rem;
+			background-position: -0.374rem 0px ;
+			position: absolute;
+			bottom: 0.17rem;
+			left: 1.47rem;
+		}
+		.footer2{
+			width: 0.84rem;
+			height: 0.84rem;
+			background-position: -0.78rem 0px ;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.footer3{
+			width: 0.37rem;
+			height: 0.68rem;
+			background-position: 0px 0px ;
+			position: absolute;
+			bottom:0.17rem;
+			right: 1.51rem;
+		}
+		.none{
+			height:1.51rem;
+			width: 100%;
+		}
+		.content{
+			height: 1.6rem;
+			width: 100%;
+			border-bottom: 1px solid #e1e5e7;
+			position: relative;
+		}
+		.content span{
+			display: inline-block;
+			background-image: url("../img/content.png");
+			background-size: 0.38rem 0.21rem;
+		}
+		.icon1{
+			position: absolute;
+			top: 0.27rem;
+			left: 0.27rem;
+		}
+		.icon1 span{
+			width: 24px;
+			height: 24px;
+			background-position: -0.17rem 0px;
+		}
+		.icon1 p{
+			display: inline-block;
+			font-size: 0.23rem;
+			color: #999;
+			font-family: 黑体-繁;
+			margin-left: 0.04rem;
+			margin-bottom: 0.04rem;
+		}
+		.content a{
+			border-left: 0.04rem solid #5fc0cd;
+            border-bottom: 0.04rem solid #5fc0cd;
+            height: 15px;
+            width: 15px;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            /*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+            position: absolute;
+            right: 0.28rem;
+            top:0.71rem;
+		}
+		.time{
+			font-size: 0.25rem;
+			color: #333;
+			font-family: 黑体-繁;
+			position: absolute;
+            left: 0.60rem;
+            top:0.65rem;
+		}
+		.price{
+			font-size: 0.27rem;
+			color: #e63b0e;
+			font-family: 黑体-繁;
+			position: absolute;
+            right: 0.64rem;
+            top:0.65rem;
+		}
+		.icon2{
+			position: absolute;
+			bottom: 0.23rem;
+			left: 0.27rem;
+			text-align: center;
+		}
+		.icon2 span{
+			width: 0.17rem;
+			height: 0.20rem;
+			background-position: 0px 0px;
+		}
+		.icon2 p{
+			display: inline-block;
+			font-size: 0.23rem;
+			color: #999;
+			font-family: 黑体-繁;
+			margin-left: 5px;
+			margin-bottom: 5px;
+		}
+		.none2{
+			height: 100px;
+			width: 100%;
+		}
