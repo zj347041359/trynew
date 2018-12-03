@@ -1,0 +1,119 @@
+字符串的扩展
+
+字符串模板：`${可存变量|javascript语句}`
+1.repeat
+'a'.repeat(3);//'aaa'
+2.includes() startWidth() endWidth()
+'xiaobai'.includes('xia')//true
+'xiaobai'.includes('xa')//false
+'xiaobai'.startWidth('x')//true
+'xiaobai'.startWidth('g')//false
+'xiaobai'.endWidth('i')//true
+'xiaobai'.endWidth('a')//false
+
+数组的扩展
+
+1.Array.from
+	Array.from(document.querySelectorAll('li'))//转成数组
+
+2.Array.of()//创建数组
+
+3.find()//找不到返回undefined|||| findinndex()//找不到返回-1
+
+let arr = [1,2,3,4];
+-------------------------------
+let res = arr.find(function(a){ return a<2 });
+console.log(res)//1
+-------------------------------
+let res = arr.findIndex(function(a){ return a<2 });
+console.log(res)//0
+
+4.fill()
+const arr = [1,2,3,4];
+-------------------------------
+arr.fill('abc');
+console.log(arr)//['abc','abc','abc','abc']
+-------------------------------
+arr.fill('abc',1,3);
+console.log(arr)//[1,'abc','abc',4]
+
+对象的扩展
+
+1.简写
+
+let a = 1;
+const obj = {a}//obj:{a:1}
+------------------------------
+const obj = {
+	demo(){}//对象中的函数简写
+}
+
+2.Object.is()
+
+console.log(Object.is(NaN,NaN))//true
+console.log(Object.is(+0,-0))//false
+
+3.Object.assign()
+
+let obj1 = {a:1};
+let obj1 = {a: 1, b: 3};
+let obj1 = {c: 'abc'};
+
+Object.assign(obj1, obj3, obj3)
+console.log(obj1) //{a: 1, b: 3, c: 'abc'}
+
+函数的扩展
+
+1.给参数默认值
+
+function a(a=10, b=20){
+	console.log(a+b)
+}
+a();//30
+a(0,10);//10
+
+2.rest !!rest之后不能再加参数 error::function sum(...arr,a){}!!
+
+function sum(...arr){
+	let res = 0;
+	for(let i=0;i<arr.length;i++){
+		res += arr[i];
+	}
+	console.log(res);
+}
+sum(1,2)//3
+
+3. 箭头函数
+
+const fn =a =>a;
+const fn2 = function(a){ return a;}
+两者效果相同
+！！参数多加(),执行语句多加{}
+-----------------
+
+用法2： const fn3 = (a,b) => ({a,b})
+console.log(fn3(1,2));//{a: 1, b: 2}
+-------------------------
+let arr = [3,1,2];
+arr.sort((a,b)=>a-b);
+cosole.log(arr);//[1,2,3]
+
+注意箭头函数的this指向问题
+
+function fn(){
+	setTimeout(function(){ console.log(this) }, 1000)
+	setTimeout(()=>{ console.log(this) }, 1000)
+}
+var obj = {a: 1};
+
+fn.call(obj);
+//window...
+//{a: 1}
+
+箭头函数体内没有arguments对象，如果需要可用rest参数代替
+箭头函数不能当做构造函数，不可以适用new命令
+
+
+
+
+
