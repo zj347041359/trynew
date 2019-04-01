@@ -107,7 +107,8 @@
 		position: relative;
 		text-align: center;
 	}
-	.version div{
+	.play{
+		display:block;
 		margin-left: 0.64rem;
 		margin-right: 0.70rem;
 		background-color: #69d1e9;

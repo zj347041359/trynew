@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-03-21 21:38:53
+ * @version $Id$
+ */
+ p,div,body,p{
+	margin:0;
+	padding: 0;
+ }
+ 	@media screen and (min-width: 0px) {html{font-size:50px;}}
+	@media screen and (min-width: 360px) {html{font-size:56.25px;}}
+	@media screen and (min-width: 375px) {html{font-size:58.59375px;}}
+	@media screen and (min-width: 400px) {html{font-size:62.5px;}}
+	@media screen and (min-width: 414px) {html{font-size:64.6875px;}}
+	@media screen and (min-width: 440px) {html{font-size:68.75px;}}
+	@media screen and (min-width: 480px) {html{font-size:75px;}}
+	@media screen and (min-width: 520px) {html{font-size:81.25px;}}
+	@media screen and (min-width: 560px) {html{font-size:87.5px;}}
+	@media screen and (min-width: 600px) {html{font-size:93.75px;}}
+	@media screen and (min-width: 640px) {html{font-size:100px;}}
+	@media screen and (min-width: 680px) {html{font-size:106.25px;}}
+	@media screen and (min-width: 720px) {html{font-size:112.5px;}}
+	@media screen and (min-width: 760px) {html{font-size:118.75px;}}
+	@media screen and (min-width: 800px) {html{font-size:125px;}}
+	@media screen and (min-width: 960px) {html{font-size:150px;}}
+	@media screen and (min-width: 1280px) {html{font-size:200px;}}
+	.navtopmargin{
+		border:0;
+		margin: 0;
+		min-height: 0;
+		border-bottom: 0.01rem solid #74d4eb;
+	}
+	.header{
+		position: relative;
+		height: 0.68rem;
+		background-color: #29bde0;
+	}
+	.navtoppadding{
+		padding: 0;
+	}
+	.home{
+		position: absolute;
+		bottom: 0.20rem;
+		left: 0.20rem;
+		width:0.51rem;
+		height: 0.42rem;
+		background-image: url("../img/home.jpg");
+		background-size: 0.51rem 0.42rem;
+	}
+	.header p{
+		font-size: 0.34rem;
+		color:#fff;
+		line-height: 0.68rem;
+		text-align: center;
+		letter-spacing: 0.04rem;
+	}
+	.help{
+		position: absolute;
+		right: 0.20rem;
+		bottom: 0.13rem;
+		width: 0.40rem;
+		height: 0.40rem;
+		background-image: url("../img/help.jpg");
+		background-size: 0.40rem 0.40rem;
+	}
+	.none{
+			height:0.68rem;
+			width: 100%;
+		}
+	.content{
+		/*padding: 0 0.7rem;*/
+	}
+	.result{
+		background-color: #29bde0;
+		padding: 0 0.7rem;
+		border-bottom:0.01rem solid #ddd;
+	}	
+	img{
+		margin-top: 0.24rem;
+		margin-left: 0.73rem;
+		height: 2.05rem;
+		width: 3.5rem;
+		
+	}
+	.evaluation{
+		font-size: 0.33rem;
+		color: #ffc865;
+		padding: 0.1rem 0.02rem;
+		letter-spacing:0.01rem;
+	}
+	.result1{
+		color: #fff;
+		font-size: 0.26rem;
+		letter-spacing:0.01rem;
+		padding: 0.1rem 0.02rem;
+	}
+	.day{
+		padding: 0.1rem 0.7rem;
+		border-bottom: 0.01rem solid #ddd;
+	}
+	.whatday{
+		font-size: 0.3rem;
+		letter-spacing:0.02rem;
+	}
+	.whattime{
+		font-size: 0.2rem;
+		color:#d6d6d6;
+		float: right;
+	}
+	.day p{
+		font-size: 0.26rem;
+		letter-spacing: 0.03rem;
+		color:#a6a6a6;
+		padding-bottom: 0.15rem;
+	}
+	footer{
+		height: 1.29rem;
+		width: 100%;
+		background-color: rgba(153,223,240,0.8);
+		position: fixed;
+		bottom:0;
+		font-size: 0.4rem;
+		padding:0.24rem;
+	}
+	footer a{
+		color:#fff;
+		display: inline-block;
+		width:2.7rem;
+		height: 0.8rem;
+		border-radius: 0.08rem;
+		text-align: center;
+		line-height: 0.8rem;
+	}
+	.again{
+		background-color: #f66f6f;
+	}
+	.share{
+		margin-left: 0.39rem;
+		background-color: #fbb435;
+	}
