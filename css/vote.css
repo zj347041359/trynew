@@ -177,7 +177,8 @@
 	}
 	.vote{
 		display: inline-block;
-		font-size: 0.04rem;
+		font-size: 0.4rem;
+		color:#fff;
 		background-color: #fbb435;
 		width: 4.9rem;
 		height:0.87rem;
