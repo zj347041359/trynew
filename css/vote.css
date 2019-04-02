@@ -9,7 +9,7 @@
 	margin:0;
 	padding: 0;
  }
-  a{text-decoration:none;}
+ a{text-decoration:none;}
  a:hover{text-decoration:none;}
  a:active{text-decoration:none;}
  	@media screen and (min-width: 0px) {html{font-size:50px;}}
@@ -115,10 +115,14 @@
 		border-right: 0.075rem solid transparent;
 		border-left: 0.075rem solid transparent;
 	}
+	.choosediv{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
 	.choose{
-		padding-top: 0.21rem;
-		padding-right: 0.30rem;
-		display: inline-block;
+		
 	}
 	.role{
 		margin-left: 0.41rem;
