@@ -8,11 +8,10 @@
  p,div,body,p{
 	margin:0;
 	padding: 0;
-
  }
- a{
- 	text-decoration:none;
- }
+ a{text-decoration:none;}
+ a:hover{text-decoration:none;}
+ a:active{text-decoration:none;}
  	@media screen and (min-width: 0px) {html{font-size:50px;}}
 	@media screen and (min-width: 360px) {html{font-size:56.25px;}}
 	@media screen and (min-width: 375px) {html{font-size:58.59375px;}}
@@ -135,6 +134,10 @@
 		position: absolute;
 		top: 2.65rem;
 		right: 0.08rem;
+	}
+	.version ul{
+		padding-left: 0;
+		width: 95%;
 	}
 	.version li{
 		list-style-type: none;
