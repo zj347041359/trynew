@@ -49,7 +49,7 @@
 		left: 0.22rem;
 		width:0.39rem;
 		height: 0.40rem;
-		background-image: url("../img/menu.jpg");
+		background-image: url("../img/menu.png");
 		background-size: 0.39rem 0.40rem;
 	}
 	.header p{
@@ -65,7 +65,7 @@
 		bottom: 0.15rem;
 		width: 0.36rem;
 		height: 0.36rem;
-		background-image: url("../img/X.jpg");
+		background-image: url("../img/X.png");
 		background-size: 0.36rem 0.36rem;
 	}
 	.none{
@@ -90,7 +90,7 @@
 		right: 0.17rem;
 		height: 0.52rem;
 		width: 0.52rem;
-		background-image: url("../img/player.jpg");
+		background-image: url("../img/player.png");
 		background-size: 0.52rem 0.52rem;
 	}
 	.instructions1 audio{

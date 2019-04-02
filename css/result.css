@@ -49,7 +49,7 @@
 		left: 0.20rem;
 		width:0.51rem;
 		height: 0.42rem;
-		background-image: url("../img/home.jpg");
+		background-image: url("../img/home.png");
 		background-size: 0.51rem 0.42rem;
 	}
 	.header p{
@@ -65,7 +65,7 @@
 		bottom: 0.13rem;
 		width: 0.40rem;
 		height: 0.40rem;
-		background-image: url("../img/help.jpg");
+		background-image: url("../img/help.png");
 		background-size: 0.40rem 0.40rem;
 	}
 	.none{
