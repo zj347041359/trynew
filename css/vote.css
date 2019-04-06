@@ -35,6 +35,14 @@
 	@media screen and (min-width: 1200px) {html{font-size:187.5px;}}
 	@media screen and (min-width: 1280px) {html{font-size:200px;}}
 	@media screen and (min-width: 1600px) {html{font-size:250px;}}
+	@media screen and (min-width: 1920px) {html{font-size:300px;}}
+	@media screen and (min-width: 2240px) {html{font-size:350px;}}
+	@media screen and (min-width: 2560px) {html{font-size:400px;}}
+	@media screen and (min-width: 2880px) {html{font-size:450px;}}
+	@media screen and (min-width: 3200px) {html{font-size:500px;}}
+	@media screen and (min-width: 3520px) {html{font-size:550px;}}
+	@media screen and (min-width: 3840px) {html{font-size:600px;}}
+	@media screen and (min-width: 4160px) {html{font-size:650px;}}
 
 	.navtopmargin{
 		border:0;
