@@ -1,0 +1,98 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+.wrap{
+    width : 100%;
+    height :800px;
+    background-image: url('img/background.jpg');
+    background-size: 100% 100%;
+    padding : 10px;
+}
+.btn{
+    width : 180px;
+    height :120px;
+    position :absolute;
+    left: 50px;
+    background-image: url('img/strat.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.box{
+    width : 500px;
+    height : 500px;
+    transform: perspective(800px) rotateX(45deg);
+    border-top:1px solid #B25F27;
+    border-left:1px solid #B25F27;
+    margin:30px auto;
+    box-shadow: 5px 5px 5pc rgba(57, 220, 226, 0.9);
+    display: none;
+}
+.flagBox{
+    position : absolute;
+    width:200px;
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    font-size: 20px;
+    color : red;
+    font-weight: bolder;
+    display: none;
+}
+.alertBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding:10px;
+    background-color :rgba(0,0,0,0.7);
+    display: none;
+}
+.alertImg{
+    height: 300px;
+    width:450px;
+    background-size: 100% 100%;
+    position :absolute;
+    left: 0;
+    top: 0;
+    right :0;
+    bottom :0;
+    margin: auto;
+    border-radius: 20px;
+    /* display: none; */
+}
+.close{
+    height: 30px;
+    width : 30px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    background-image: url('img/close.jpg');
+    background-size : 100%;
+    cursor: pointer;
+}
+.block{
+    height: 49px;
+    width : 49px;
+    border-bottom : 1px solid #B25F27;
+    border-right : 1px solid #B25F27;
+    box-shadow: 0 0 4px #B25F27;
+    background-image: url('img/grass.jpg');
+    float : left;
+}
+.show{
+    background-image: url('img/mines.png');
+    background-size: 100% 100%;
+}
+.num{
+    background:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 49px;
+    text-align: center;
+}
+.flag{
+    background-image: url('img/flag.jpg');
+    background-size:100% 100%;
+}
