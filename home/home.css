@@ -62,7 +62,7 @@
 	float: right;
 }
 .contact a{
-	background-image: url("../img/contact.png");
+	background-image: url("img/contact.png");
 	background-size: 0.24rem 0.08rem;
 	display: inline-block;
 	width: 0.08rem;
@@ -88,7 +88,7 @@
 	
 }
 .navigation li{
-	display: inline-block;
+	display: block;
 	text-align: center;
 	float: right;
 	width: 0.34rem;
@@ -137,7 +137,7 @@
 .icon{
 	height: 0.22rem;
 	width: 0.2rem;
-	background-image: url(../img/abstract.png);
+	background-image: url(img/abstract.png);
 	background-size: 0.65rem 0.22rem;
 }
 .ordinary{
@@ -171,7 +171,7 @@
 	display: inline-block;
 	height: 0.05rem;
 	width:0.05rem;
-	background-image: url(../img/xiaoren.png);
+	background-image: url(img/xiaoren.png);
 	background-size: 0.05rem 0.05rem;
 	
 }
@@ -252,7 +252,7 @@
 .heads{
 	height: 0.36rem;
 	width: 0.36rem;
-	background-image: url("https://github.com/zj347041359/zj347041359.github.io/blob/master/home/img/heads.png");
+	background-image: url("img/heads.png");
 	background-size: 1.44rem 0.36rem;
 	background-position: -0.72rem 0;
 }
@@ -315,7 +315,7 @@
 	align-items: center;
 }
 .enterprise li div{
-	background-image: url("https://github.com/zj347041359/zj347041359.github.io/blob/master/home/img/enterprise.png");
+	background-image: url("img/enterprise.png");
 	background-size: 2.16rem 0.21rem;
 	height: 0.21rem;
 }
